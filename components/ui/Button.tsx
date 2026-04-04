@@ -12,11 +12,11 @@ const Button = ({
     fullWidth = false,
     className = '',
     children,
-     ... props
+     ...props
 }: ButtonProps) => {
     const baseClass = 'btn';
-    const variantClass = 'btn--${variant}';
-    const sizeClass = 'btn--${size}'; 
+    const variantClass = `btn--${variant}`;
+    const sizeClass = `btn--${size}`; 
     const fullWidthClass = fullWidth ? 'btn--full' : '';
 
     const combinedClasses = [
