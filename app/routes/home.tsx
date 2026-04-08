@@ -75,18 +75,18 @@ export default function Home() {
           <div className="pulse"></div>
         </div>
 
-        <p>Introducing Roomify 2.0</p>
+        <p>Introducing Realify 2.0</p>
       </div>
 
-      <h1>Build beautiful spaces at the speed of thought with Roomify</h1>
+      <h1>Bring your ideas to life with Realify</h1>
 
       <p className="subtitle">
-        Roomify is an AI-first design environment that helps you visualize, render, and ship architectural projects faster than ever.
+        Realify is an AI-powered render engine that transforms your designs into photorealistic visuals in seconds.
       </p>
 
       <div className="actions">
         <a href="#upload" className="cta">
-          Start Building <ArrowRight className="icon" />
+          Transform <ArrowRight className="icon" />
         </a>
         
         <Button variant="outline" size="lg" className="demo">Watch Demo</Button>
@@ -101,8 +101,8 @@ export default function Home() {
                 <Layers className="icon" />
               </div>
 
-              <h3>Upload your floor plan</h3>
-              <p>Supports JPG, PNG, formats up to 10MB</p>
+              <h3>Upload your ideas</h3>
+              <p>Supports JPG, PNG, & WEBP formats up to 10MB</p>
             </div>
 
             <Upload onComplete={handleUploadComplete} />
@@ -115,7 +115,7 @@ export default function Home() {
         <div className="section-head">
           <div className="copy">
             <h2>Projects</h2>
-            <p>Your latest work and shared community projects, all in one place.</p>
+            <p>Your latest works, all in one place.</p>
           </div>
         </div>
         
@@ -128,7 +128,7 @@ export default function Home() {
                 />
 
                 <div className="badge">
-                  <span>Community</span>
+                  <span>Private</span>
                 </div>
               </div>
 
@@ -141,7 +141,7 @@ export default function Home() {
                     <span>
                       {new Date(timestamp).toLocaleDateString()}
                     </span> 
-                    <span>By JS Mastery</span>
+                    <span>By you</span>
                   </div>
                 </div>
                 <div className="arrow">

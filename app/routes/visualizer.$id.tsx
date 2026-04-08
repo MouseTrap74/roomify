@@ -1,7 +1,7 @@
 import Button from "components/ui/Button";
 import { generate3DView } from "lib/ai.action";
 import { createProject, getProjectById } from "lib/puter.action";
-import { Box, Download, RefreshCcw, Share2, X } from "lucide-react";
+import { Gem, Download, RefreshCcw, Share2, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { ReactCompareSlider, ReactCompareSliderImage } from "react-compare-slider";
 import { useNavigate, useOutletContext, useParams } from "react-router"
@@ -25,7 +25,7 @@ const VisualizerId = () => {
 
         const link = document.createElement('a');
         link.href = currentImage;
-        link.download = `roomify-${id || 'design'}.png`;
+        link.download = `realify-${id || 'design'}.png`;
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -114,9 +114,9 @@ const VisualizerId = () => {
         <div className="visualizer">
             <nav className="topbar">
                 <div className="brand">
-                    <Box className="logo" />
+                    <Gem className="logo" />
 
-                    <span className="name">Roomify</span> 
+                    <span className="name">Realify</span> 
                 </div>
                 <Button variant="ghost" size="sm" onClick={handleBack} className="exit">
                     <X className="icon" />Exit Editor
@@ -128,7 +128,7 @@ const VisualizerId = () => {
                     <div className="panel-header">
                         <div className="panel-meta">
                             <p>Project</p>
-                            <h2>{project?.name || `Residence ${id}`}</h2>
+                            <h2>{project?.name || `Idea ${id}`}</h2>
                             <p className="note">Created by You</p>
                         </div>
 
